@@ -1,0 +1,89 @@
+# 复制到 SenryLee/laws-raw 仓库的 .github/workflows/sync-laws-db.yml 中使用。
+# laws-raw 的法规正文就在仓库根目录（法律/、行政法规/ 等），构建源目录用仓库根，不要再套一层 laws/。
+# 构建代码放在 tools/laws_builder/（含 core/ 与 builder/），数据库会写到 tools/laws_builder/data/。
+# 仓库配置：
+#   Variables: DEPLOY_HOST、DEPLOY_USER、DEPLOY_PORT、DEPLOY_DIR
+#   Secrets:   DEPLOY_KEY（SSH 私钥，不能放到 Variables）
+
+name: Build & Push Laws SQLite DB
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "构建范围：core（推荐，3.4万核心法规）或 both（含32.5万扩展库）"
+        required: true
+        default: "core"
+        type: choice
+        options:
+          - core
+          - both
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "tools/**"
+      - ".github/**"
+      - "README.md"
+      - ".gitignore"
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout laws-raw
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install minimal builder dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir jieba==0.42.1 PyYAML>=6.0
+
+      - name: Build SQLite database
+        env:
+          BUILD_SCOPE: ${{ github.event.inputs.scope || 'core' }}
+        run: |
+          # 正文在仓库根目录。core 约 3.4 万篇；both 会再编入约 32.5 万篇扩展库。
+          python3 tools/laws_builder/builder/build_db.py \
+            --source . \
+            --scope "${BUILD_SCOPE}"
+
+      - name: Compress database archives
+        run: |
+          mkdir -p dist
+          if [ -f tools/laws_builder/data/laws_core.db ]; then
+            gzip -c -6 tools/laws_builder/data/laws_core.db > dist/laws_core.db.gz
+          fi
+          if [ -f tools/laws_builder/data/laws_ext.db ]; then
+            gzip -c -6 tools/laws_builder/data/laws_ext.db > dist/laws_ext.db.gz
+          fi
+          ls -lh dist/
+
+      - name: Push to Aliyun and atomic swap
+        env:
+          SSH_HOST: ${{ vars.DEPLOY_HOST }}
+          SSH_USER: ${{ vars.DEPLOY_USER }}
+          SSH_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+          REMOTE_DIR: ${{ vars.DEPLOY_DIR }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "${SSH_PORT}" -H "${SSH_HOST}" >> ~/.ssh/known_hosts
+
+          for gz in dist/*.db.gz; do
+            [ -f "$gz" ] || continue
+            base="$(basename "$gz")"
+            scp -i ~/.ssh/deploy_key -P "${SSH_PORT}" "$gz" "${SSH_USER}@${SSH_HOST}:${REMOTE_DIR}/${base}"
+            ssh -i ~/.ssh/deploy_key -p "${SSH_PORT}" "${SSH_USER}@${SSH_HOST}" \
+              "python3 ${REMOTE_DIR}/../deploy/atomic_swap.py '${REMOTE_DIR}' '${base}'"
+          done
