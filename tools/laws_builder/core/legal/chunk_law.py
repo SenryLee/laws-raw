@@ -30,6 +30,15 @@ class LawChunk:
     seq: int
 
 
+def _unwrap_bold(text: str) -> str:
+    """把 **第五百七十七条**　【违约责任】还原成可识别的条文行。"""
+    if text.startswith("**"):
+        end = text.find("**", 2)
+        if end != -1:
+            return (text[2:end] + text[end + 2:]).strip()
+    return text
+
+
 def _sha256(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -83,7 +92,7 @@ def _strip_toc(text: str) -> str:
     if not m_first:
         return text
     # 若紧跟的是目录里的「第一编」，找到正文里真正出现「第一条」的位置前的最近编/章
-    m_art1 = re.search(r"(?m)^第[一1]条[\s　：:]", after)
+    m_art1 = re.search(r"(?m)^(?:\*\*)?第[一1]条(?:\*\*)?[\s　：:]", after)
     if not m_art1:
         return text
     # 往前找 400 字内最后一个编/章标题作为正文起点
@@ -117,24 +126,28 @@ def chunk_law_text(
         line = clean_body[pos : line_end if nl == -1 else nl]
         stripped = line.lstrip()
         leading = len(line) - len(stripped)
-        if leading <= 8 and not _MD_HEAD.match(line):
-            am = _ART_LINE.match(stripped)
+        marker = _unwrap_bold(stripped)
+        heading = _MD_HEAD.match(line)
+        if heading:
+            marker = heading.group(3).strip()
+        if leading <= 8:
+            am = _ART_LINE.match(marker)
             if am:
                 no = cn2num(am.group(2))
                 if no is not None:
                     suffix = f"之{am.group(4)}" if am.group(4) else ""
-                    label = stripped.split("条", 1)[0] + "条" + suffix
+                    label = marker.split("条", 1)[0] + "条" + suffix
                     articles.append({"start": pos, "end": line_end, "no": no, "label": label})
                     pos = line_end
                     continue
-            sm = _STRUCT_LINE.match(stripped)
+            sm = _STRUCT_LINE.match(marker)
             if sm:
                 no = cn2num(sm.group(2))
                 if no is not None:
                     rank = _STRUCT_RANK.get(sm.group(3), 9)
                     structs.append({
                         "start": pos, "end": line_end, "no": no,
-                        "label": stripped.strip(), "rank": rank,
+                        "label": marker.strip(), "rank": rank,
                     })
                     pos = line_end
                     continue
