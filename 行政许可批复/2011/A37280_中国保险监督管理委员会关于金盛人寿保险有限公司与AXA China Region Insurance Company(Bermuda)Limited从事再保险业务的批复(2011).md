@@ -1,0 +1,26 @@
+---
+标题: 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA China Region Insurance Company(Bermuda)Limited从事再保险业务的批复(2011)
+文号: '保监产险[2011]128号'
+制定机关: 中国保险监督管理委员会(已撤销)
+效力等级: 行政许可批复
+时效性: 现行有效
+主题分类: 保险
+公布日期: 2011.01.25
+施行日期: 2011.01.25
+条数: 1
+完整性: 全文
+---
+
+# 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA China Region Insurance Company(Bermuda)Limited从事再保险业务的批复(2011)
+
+## 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA　China　Region　Insurance　Company（Bermuda）　Limited从事再保险业务的批复（保监产险〔2011〕128号）
+
+金盛人寿保险有限公司：
+
+你公司《关于金盛人寿保险有限公司与AXA China Region Insurance Company（Bermuda） Limited从事再保险关联交易的请示》（金盛发〔2010〕1－159号）收悉。经审核，同意你公司在2011年度与AXA China Region Insurance Company（Bermuda） Limited从事再保险关联交易。
+
+此复
+
+中国保险监督管理委员会
+
+二○一一年一月二十五日

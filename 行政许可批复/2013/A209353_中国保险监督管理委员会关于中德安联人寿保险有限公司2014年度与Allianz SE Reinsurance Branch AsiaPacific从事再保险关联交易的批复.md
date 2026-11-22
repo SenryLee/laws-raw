@@ -1,0 +1,26 @@
+---
+标题: 中国保险监督管理委员会关于中德安联人寿保险有限公司2014年度与Allianz SE Reinsurance Branch AsiaPacific从事再保险关联交易的批复
+文号: '保监许可[2013]548号'
+制定机关: 中国保险监督管理委员会(已撤销)
+效力等级: 行政许可批复
+时效性: 现行有效
+主题分类: 保险
+公布日期: 2013.12.12
+施行日期: 2013.12.12
+条数: 1
+完整性: 全文
+---
+
+# 中国保险监督管理委员会关于中德安联人寿保险有限公司2014年度与Allianz SE Reinsurance Branch AsiaPacific从事再保险关联交易的批复
+
+## 中国保险监督管理委员会关于中德安联人寿保险有限公司2014年度与Allianz　SE　Reinsurance　Branch　AsiaPacific从事再保险关联交易的批复（保监许可〔2013〕548号）
+
+中德安联人寿保险有限公司：
+
+你公司《关于2014年度与关联企业Allianz SE Reinsurance Branch Asia Pacific从事再保险交易的申请》（安联精（2013）22号）及其补正材料收悉。经审核，同意你公司在2014年度与Allianz SE Reinsurance Branch Asia Pacific从事再保险关联交易。
+
+此复
+
+中国保监会
+
+2013年12月12日

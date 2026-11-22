@@ -1,0 +1,28 @@
+---
+标题: 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA China Region Insurance Company(Bermuda)Limited从事再保险业务的批复
+文号: '保监产险[2010]16号'
+制定机关: 中国保险监督管理委员会(已撤销)
+效力等级: 行政许可批复
+时效性: 现行有效
+主题分类: 保险
+公布日期: 2010.01.06
+施行日期: 2010.01.06
+条数: 1
+完整性: 全文
+---
+
+# 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA China Region Insurance Company(Bermuda)Limited从事再保险业务的批复
+
+## 中国保险监督管理委员会关于金盛人寿保险有限公司与AXA　China　Region　Insurance　Company（Bermuda）　Limited从事再保险业务的批复（保监产险〔2010〕16号）
+
+金盛人寿保险有限公司：
+
+你公司《关于金盛人寿保险有限公司与AXA China Region Insurance Company（Bermuda） Limited从事再保险关联交易的请示》（金盛发〔2009〕1－113号）收悉。经审核，同意你公司在2010年度与AXA China Region Insurance Company（Bermuda） Limited从事再保险关联交易。
+
+请你公司在与AXA China Region Insurance Company（Bermuda） Limited签订2010年度生效的合约再保险合同生效后一个月之内，将再保险合同简要文本（Slip）上报我会；同时，在每季度结束后一个月之内，将上季度与AXA China Region Insurance Company（Bermuda） Limited签订的2010年度生效的临分再保险合同简要文本（Slip）上报我会。
+
+此复
+
+中国保险监督管理委员会
+
+二○一○年一月六日

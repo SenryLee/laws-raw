@@ -1,0 +1,26 @@
+---
+标题: '中国保险监督管理委员会关于美亚财产保险有限公司与American Home Assurance Company,Singapore Branch从事再保险关联交易的批复'
+文号: '保监产险[2011]1521号'
+制定机关: 中国保险监督管理委员会(已撤销)
+效力等级: 行政许可批复
+时效性: 现行有效
+主题分类: 保险
+公布日期: 2011.09.20
+施行日期: 2011.09.20
+条数: 1
+完整性: 全文
+---
+
+# 中国保险监督管理委员会关于美亚财产保险有限公司与American Home Assurance Company,Singapore Branch从事再保险关联交易的批复
+
+## 中国保险监督管理委员会关于美亚财产保险有限公司与American　Home　Assurance　Company，　Singapore　Branch从事再保险关联交易的批复（保监产险〔2011〕1521号）
+
+美亚财产保险有限公司：
+
+你公司《关于2011年与关联企业American Home Assurance Company， Singapore Branch从事再保险交易的请示》（美亚保险〔2010〕232号）及其补正材料收悉。经审核，同意你公司自批复之日起至2011年12月31日止与American Home Assurance Company， Singapore Branch从事再保险关联交易。
+
+此复
+
+中国保险监督管理委员会
+
+二〇一一年九月二十日

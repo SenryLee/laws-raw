@@ -1,0 +1,90 @@
+---
+标题: 文化部关于同意美国歌手PIT BULL等到上海市演出的批复
+文号: '文市函[2013]1104号'
+制定机关: 文化部(已撤销)
+效力等级: 行政许可批复
+时效性: 现行有效
+主题分类: 文化
+公布日期: 2013.07.04
+施行日期: 2013.07.04
+条数: 1
+完整性: 全文
+---
+
+# 文化部关于同意美国歌手PIT BULL等到上海市演出的批复
+
+## 文化部关于同意美国歌手PIT　BULL等到上海市演出的批复（文市函〔2013〕1104号）
+
+上海市文化广播影视管理局：
+
+沪文广影视〔2013〕1013号请示收悉。
+
+经研究，同意上海白玉兰文化艺术发展有限公司邀请美国歌手PIT BULL等一行21人，于2013年8月26日至31日到上海市演出。
+
+此复。
+
+2013年7月4日
+
+附件：
+
+PITBULL演唱会曲目
+
+1、 MR WORLDWIDE
+
+2、 HEY BABY
+
+3、 ERNATIONAL LOVE
+
+4、 SHOW ME LOVE
+
+5、 DANCE AGAIN
+
+6、 MOVE SHAKE DROP
+
+7、 SHUT IT DOWN
+
+8、 LIVE IT UP
+
+9、 KRAZY
+
+10、 GET IT STARTED
+
+11、 RAIN OVER ME
+
+12、 THROW YOUR HANDS UP
+
+13、 MANOS PARRIBA ECHA PA’ALLA
+
+14、 BONBON
+
+15、 FEEL SO CLOSE
+
+16、 BACK IN TIME
+
+17、 BARBARA STREISAND（INSTRUMENTAL）
+
+18、 RIGHT TO PARTY
+
+19、 I GOT A FEELING
+
+20、 CRAZY PEOPLE
+
+21、 SHAKE SENORA
+
+22、 SHAKE
+
+23、 CULO
+
+24、 CALLE OCHO
+
+25、 ON THE FLOOR
+
+26、 I LIKE IT
+
+27、 DJ GOT US FALLING IN LOVE AGAIN
+
+28、 HOTEL ROOM
+
+29、 FEEL THIS MOMENT
+
+30、 GIVE ME EVERYTHING
